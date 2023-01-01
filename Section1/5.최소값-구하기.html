@@ -8,8 +8,15 @@
       function solution(arr) {
         let answer,
           min = Number.MAX_SAFE_INTEGER;
-        arr.sort((a, b) => a - b);
-        answer = arr[0];
+        // arr.sort((a, b) => a - b);
+        // answer = arr[0];
+
+        // answer = Math.min(...arr);
+
+        if (arr[i] < min) {
+          min = arr[i];
+        }
+        answer = min;
         return answer;
       }
 
